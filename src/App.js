@@ -58,6 +58,7 @@ export class App extends Component {
         "https://sandbox-api.brewerydb.com/v2/search/geo/point?lat=39.7238866&lng=-105.1395057&radius=25&key=04269797fa598cdeed13c0d6dc3a32ce"
       )
       .then((res) => {
+        console.log(res);
         this.setState({
           details: res.data.data,
           filterData: res.data.data,
